@@ -1,0 +1,126 @@
+html, body{
+    font-family: helvetica;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: Raleway;
+    line-height: 1.4;
+}
+
+    @media (min-width: 32em) {
+      font-size: 110%
+    }
+    @media (min-width: 54em) {
+      font-size: 111%
+    }
+    @media (min-width: 74em) {
+      font-size: 115%
+    }
+  
+    @media (min-width: 96em) {
+      font-size: 135%
+    }
+
+a.btn{
+    background-color: #54a920;
+    color: #fff;
+    text-decoration: none;
+    display:inline-block;
+    letter-spacing: 0.2rem;
+    padding: .8rem;
+    
+}
+a.btn:hover{
+    background-color: #54a920;
+}
+a.btn.btn-beta{
+      background-color: #e36e3a;
+    }
+
+
+.overlay{
+    background:#c95b5b;
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+.container{
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    bottom: -4rem;
+    margin: -2 auto;
+    z-index: 9;
+    width: 40%;
+    height: 40%;
+    display:table;
+    border-radius: 1.5rem; 
+     box-shadow: 0 12px 13px rgba(0,0,0,0.16), 0 12px 13px rgba(0,0,0,0.16);
+}  
+.leftSide,.rightSide{
+      width: 100%;
+      position: relative;
+      text-align: center;
+      padding: 7.5%;
+}
+      @media (min-width: 54em){
+          display:table-cell;
+          vertical-align:middle;
+          width: 50%;
+      }
+p{
+    padding: 5%;
+    position: relative;
+    z-index: 3;
+}
+
+h3 {
+    color: rgb(61, 61, 61);
+    text-transform: uppercase;
+    letter-spacing: 0.10rem;
+    border-bottom: .10rem solid #eee;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+p{
+    color: #bbb;
+    padding:1rem;
+}
+small{
+    color: #ccc;    
+}
+
+.btn{
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    padding:1rem;
+    margin: 1rem auto;
+    display: inline block; 
+ }
+
+.container{
+    animation: bounce 2s;
+}
+
+@keyframes bounce {
+    0% { opacity:0; transform:translateY(-800px); }
+    60% { opacity:1; transform:translateY(25px); }
+    80% { transform:translateY(-8px); opacity:1; }
+    100% { transform:translateY(0); } }
+ 
+ .bounce {
+    -webkit-animation:bounce .5s ease-in-out;
+  -moz-animation-name:bounce .5s ease-in-out;
+       animation-name:bounce .5s ease-in-out;
+   -ms-animation-name:bounce .5s ease-in-out;
+    -o-animation-name:bounce .5s ease-in-out; 
+}

@@ -1,0 +1,228 @@
+
+html, body{
+  font-family: Raleway;
+ 
+}
+  .nav {
+	height: 8rem;
+	display: flex;
+	justify-content: center;
+  align-items: center;  
+}
+.navbar {
+	width: 20rem;
+	height: 5rem;
+	background: rgba(255,255,255,.9);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 1rem;
+	position: relative;
+	box-shadow: 0 1rem 5rem rgba(90,90,90,.1);
+  transition: .2s all;
+  margin-top: 1rem;
+}
+
+  .card1{
+    background:#5b7dc9;
+  }
+  
+  .card2{
+    background:#4b4a4a;;
+  }
+  .title{
+    color:#ffffff;
+    font-family: roboto;
+    weight:300;
+  }
+  .title-2{
+    color:#2D354A;
+    font-family: roboto;
+    weight:300;
+  }
+  .subTitle{
+    color:rgb(228, 229, 235);
+    font-size:1.4rem;
+    weight:100;
+    font-family:roboto;
+  }
+  .msc{
+    font-size:1.2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    color:#B7B8C0;
+    text-align:center;
+  }
+  hr{
+    border-color:#7C8097;
+    width:90%;
+    margin-top:2rem;
+    margin-bottom:6.5rem;
+  } 
+  .hr2{
+    border-color:#E4E8ED;
+  }
+  .btn{
+    background-color: #DA59B1;
+      color: #fff;
+      text-decoration: none;
+      display:inline-block;
+      letter-spacing: 0.2rem;
+      padding: .8rem;
+      margin:.5rem;
+      width:35%;
+      margin-top:-2rem;
+  }
+  #imageInput{
+    background-color: #DA59B1;
+    color: #fff;
+    text-decoration: none;
+    display:inline-block;
+    letter-spacing: 0.2rem;
+    padding: .8rem;
+    margin:.5rem;
+    width:15rem;
+    margin-top:0rem;
+    background: none;
+    font-family: Raleway;
+  }
+    #imageInput input[type="file"] {
+        display: none;
+    }
+  
+  #uploadBtn{
+    background-color: #DA59B1;
+      color: #fff;
+      text-decoration: none;
+      display:inline-block;
+      letter-spacing: 0.2rem;
+      padding: .8rem;
+      margin:.5rem;
+      width:35%;
+      margin-top:0rem;
+  }
+  .btn:hover{
+    border:solid .1rem;
+    height:4rem;
+    color: #DA59B1;
+    background:#ffffff;
+    width:35%;
+    border-color: #F54BA5;
+    box-shadow: 0 .25rem .5rem rgba(0,0,0,0.16), 0 25rem .5rem rgba(0,0,0,0.16);
+  }
+  body {
+    background: whitesmoke;
+    text-align: center;
+    width: 0 auto;
+    height: 50rem;
+    position: relative;
+    -webkit-perspective: 75rem;
+  }
+  .card{
+    border-radius: 1rem;
+    display: inline-block;
+    height:48rem;
+    margin: 1rem auto;
+    position: relative;
+    width:38rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.16), 0 1rem 2rem rgba(0,0,0,0.16);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+    overflow: hidden;
+  }
+.card div {
+    backface-visibility: hidden;
+}
+
+.back {
+   position: absolute;
+   width:100%;
+   height:100%;
+   backface-visibility: hidden;
+   background: goldenrod;
+   transform: rotateY(180deg);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.16), 0 1rem 2rem rgba(0,0,0,0.16);
+  margin-top:-40rem;
+}
+.card.flipped {
+    transform: rotateY( 90deg );
+}
+  .img{
+    margin-top:6rem;
+    width:12rem;
+    height:12rem;
+  }
+
+  footer {
+    width: 100%;
+    margin-top:10rem;
+  
+  }
+  #icons{
+      font-size: 2rem;
+  }
+  .col-md-6{
+    display: inline;
+    margin: auto;
+    padding: none;
+  }
+  .row{
+    width:80rem;
+    margin-left:22.5%;
+  }
+.polaroid {
+  background: #fcfcfc;
+  width: 32.5rem;
+  height: 32.5rem;
+  margin: 5rem auto;
+  position: relative;
+
+}
+.polaroid:before {
+  width: 10rem;
+  height: 4rem;
+  content: "";
+  background: hsla(40, 59%, 54%, 0.4);
+  position: absolute;  
+}
+.polaroid:before {
+  left: 8.5rem;
+  top: -3rem;
+}
+.polaroid picture {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 3rem;
+  overflow: hidden;
+}
+.polaroid img {
+  max-width: 100%;
+}
+label {
+  background-color: #DA59B1;
+  color: #fff;
+  text-decoration: none;
+  display:inline-block;
+  letter-spacing: 0.2rem;
+  padding: .8rem;
+  margin:.5rem;
+  width:35%;
+  border-radius: .5rem;
+}
+.card-text{
+  margin:2rem auto;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 50;
+
+}
+.card-footer{
+  margin-top:-4rem;
+}
+#card-image{
+  /* border: .25rem solid black; */
+  height: 22rem;
+  width: 30rem;
+}

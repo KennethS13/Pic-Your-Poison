@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Something Awesome!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style3.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+</head>
+
+<body>
+              
+    <header>
+        <div class="nav">
+            <div class="navbar">
+                <a href="index3.html"><i class="fas fa-home"></i></a>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-user-astronaut"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" id="card1" >
+
+
+                <div class="card card1">
+                    <div class="front1">
+                        <img src="https://cdn-images-1.medium.com/max/1600/1*Da2AbqNvq58WsO-zGibwXw.png" alt="profile-pic"
+                            class="img">
+                        <h1 class="title">Face++</h1>
+                        <p class="subTitle">FACIAL RECOGNITION SOFTWARE</p>
+                        <div class="msc">
+                            <p>Upload your selfie, click to guess your emotion, and we'll get you a drink!</p>
+                        </div>
+                        <hr>
+                        <div class="card-footer">
+                                <form method='post' action='' enctype="multipart/form-data">
+                                    <input type='file' accept="image/*" data-max-size= "5000"  on-change= "previewFile()" name='file' id="imageInput" class="form-control" ><br>
+                                    <input type='submit'  class='btn btn-info' value='upload' id='uploadBtn'>
+                                  </form>
+                          <!-- <form method='post' action='' enctype="multipart/form-data">
+                            <input type="file" name="uploadfile" id="img" style="display:none;"/>
+                                <label for="img"><i class="fas fa-upload"></i></label>
+                            <input type='submit' class='btn btn-info' value='Upload' id='uploadBtn'> 
+                            </form> -->
+                        </div>
+                            
+                    </div>
+                </div>
+                <div class="back"></div>
+                <div class="back2">
+                    <div class="content">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-6" id="no2">
+            <div class="card" id="card2" >
+                <div class="card card2">
+                    <div class="front">
+                        <div class="polaroid" id="imageCard">
+                                <picture>
+                                  <img src="https://www.mayorsfundforlondon.org.uk/wp-content/uploads/2016/06/img-placeholder-square-300x300.jpg" id="card-image">
+                                  <p class="card-text"></p>
+                                </picture>
+                            
+                                <div id="uploadModal" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+                                      
+                                          <!-- Modal content-->
+                                          <div class="modal-content">
+                                            
+                                            <div class="modal-body">
+                                
+                                            </div>
+                                       
+                                          </div>
+                                      
+                                        </div>
+                                      </div>
+                            </div>
+                
+                        <button class="btn" onclick="flip()"> <i class="fas fa-beer"></i></button>
+                    </div>
+                    <div class="back"></div>               
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <span class="text-center" id="icons">
+                <div>
+                    <i class="fab fa-github"></i>
+                </div>
+        </div>
+    </footer>
+
+    <script link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+<script src="assets/javascript/app3.js"></script>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.loading {
+  height: 0;
+  width: 0;
+  padding: 1rem;
+  border: .2rem solid #ccc;
+  border-right-color: tomato;
+  border-bottom-color: olive;
+  border-radius: 22px;
+  -webkit-animation: rotate 1s infinite linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+
+
+.loader {
+  animation: rotation 1s infinite linear;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border-top-color: rgba(255, 255, 255, 0.7);
+  height: 3em;
+  width: 3em;
+}
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+html, body {
+  height: 100%;
+}
+body {
+  animation: clrTransition 30s infinite linear;
+  display: flex;
+  margin-left: -10rem;
+  overflow: hidden;
+}
+
+.loader {
+  margin: auto;
+}
+
+@keyframes clrTransition {
+  0% {
+    background-color: rgb(6, 110, 136);
+  }
+  
+  33% {
+    background-color: rgb(158, 24, 192);
+  }
+  
+  66% {
+    background-color: rgb(6, 146, 118);
+  }
+    100%{
+    background-color: rgb(6, 110, 136);
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="loading"></div>
+
+
+</body>
+</html>
