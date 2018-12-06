@@ -1,48 +1,91 @@
 body {
-    background-image: url(https://alethakuschan.files.wordpress.com/2008/05/like-water.jpg);
-      
+    background-image: url(http://1000miles.ru/wp-content/uploads/2018/01/vintage-key-wallpaper-high-definition-For-Free-Wallpaper.jpg);
+      background-repeat: none;
 }
 .container-head {
     
    background-color: rgb(63, 19, 63);
-   padding-left: 30%;
-   
+   padding-left: 33%;
+
    /* align-content: center; */
     font-family: 'Fredericka the Great', cursive;
     font-size: 80px;
     height: 100px;
     color: white;
     opacity: .8;
+    margin-bottom: 20px;
 }
 
 .container-main {
     background-color: rgb(31, 28, 28);
-    height: 700px;
-    width: 60%;
+    height: 550px;
+    width: 40%;
     justify-content: center;
     margin: 0 auto;
     background-image: url(http://24.media.tumblr.com/06d078d7bb17e36c08c4488c388b9e32/tumblr_mhesviJUn11s1jj9ro1_500.gif); 
     background-image: initial;
+    padding-top: 10px;
 
     
 }
-
-
-
-
 .card {
     margin: 0 auto;
-    height: 600px;
+    height: 500px;
     width: 450px;
+    background-color: ghostwhite;
+    
+}
+.card-text{
+    padding-left:20px;
+    text-align: center;
 }
 .card-img-top{
-    padding-top: 1%;
+    padding-top: 10px;
     margin: 0 auto;
     justify-content: center;
-    height: 450px;
-    width: 400px;
+    height: 250px;
+    width: 200px;
+    background-color:black;
 }
 
-.drink-button {
-    background-color: green;
+#drink-modal {
+    width: 600px;
+    max-width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    max-height: 100%;
+    overflow: auto;
+}
+#drink-body {
+    /* height:800px;
+    width: 100%; */
+  word-wrap: break-word;
+    font-size: 12px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .container-main{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container-head{
+        width: 100%;
+        font-size: 35px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 100px;
+        margin-bottom:20px;
+        padding: 0;
+
+    }
+
+    .card-img-top{
+        width:80%;
+        margin: 0 auto;
+    }
 }
